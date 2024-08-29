@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmación de Inscripción</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+        border-top: 6px solid #1a73e8;
+      }
+      h1 {
+        color: #1a73e8;
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      p {
+        margin: 15px 0;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #555;
+      }
+      .highlight {
+        color: #CC2EDB;
+        font-weight: bold;
+      }
+      .details {
+        background-color: #e8f0fe;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+      .details p {
+        margin: 5px 0;
+        color: #333;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>¡Hola, {{#if lastname}}{{name}} {{lastname}}{{else}}{{name}}{{/if}}!</h1>
+      <p>¡Gracias por inscribirte en el curso <span class="highlight">Pro Press</span>!</p>
+      <p>A continuación te compartimos los detalles de tu curso:</p>
+
+      <div class="details">
+        <p><strong>📅 Fecha del curso:</strong> 22 de Septiembre</p>
+        <p><strong>⏳ Duración:</strong> 8 Horas</p>
+        <p><strong>📍 Ubicación:</strong> Paseo Santa María de la Cabeza, 10 - Local 2</p>
+      </div>
+
+      <p>Si tienes alguna pregunta, no dudes en contactarnos a <a href="mailto:admin@esmeraschool.com" style="color: #1a73e8;">admin@esmeraschool.com</a>.</p>
+
+      <div class="footer">
+        <p>Atentamente,</p>
+        <p>El equipo de Esmera School</p>
+      </div>
+    </div>
+  </body>
+</html>
