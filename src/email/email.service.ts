@@ -35,7 +35,7 @@ export class EmailService {
     name: string,
     lastname?: string,
   ): string {
-    const template = this.getTemplate('paymentSuccessPerfectgel');
+    const template = this.getTemplate('paymentSuccessPerfectGel');
     const compiledTemplate = handlebars.compile(template);
     return compiledTemplate({ name, lastname });
   }
