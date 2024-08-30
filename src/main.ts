@@ -16,7 +16,7 @@ async function bootstrap() {
   // Haiblitar Morgan
   // Habilitar CORS
   app.enableCors({
-    origin: '*', // Reemplaza con la URL de tu frontend
+    origin: 'https://xn--cursosuasmadrid-4qb.com', // Reemplaza con la URL de tu frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
