@@ -14,10 +14,10 @@ import { CreateCheckoutSessionDto } from './dto/create-checkout-session.dto';
 export class PaymentsController {
   constructor(private readonly stripeService: StripeService) {}
 
-  @Get('connect')
-  async connect() {
-    return 'connect';
-  }
+  //@Get('connect')
+  //async connect() {
+  //  return 'connect';
+  // }
 
   @Post('create-checkout-session')
   async createCheckoutSession(
