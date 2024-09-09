@@ -18,4 +18,21 @@ export class BookingService {
     const data = this.getDataFromFile();
     return data.dates;
   }
+
+  // Servicio para marcar una fecha como reservada
+  reserveDate(date: string) {
+    const data = this.getDataFromFile();
+    // Buscar la fecha en el array
+    const dateToReserve = data.dates.find(
+      (d: { date: string; available: boolean }) => d.date === date,
+    );
+    if (!dateToReserve) {
+      throw new Error('Fecha no encontrada');
+    }
+    // Marcar la fecha como no disponible
+    dateToReserve.available = false;
+    // Guardar los cambios en el archivo JSON
+    fs.writeFileSync(this.filePath, JSON.stringify(data, null, 2));
+    return { message: `Fecha ${date} reservada con éxito` };
+  }
 }
