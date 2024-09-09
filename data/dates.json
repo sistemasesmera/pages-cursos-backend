@@ -1,0 +1,13 @@
+{
+    "dates": [
+      { "date": "2024-09-01", "available": false },
+      { "date": "2024-09-02", "available": true },
+      { "date": "2024-09-03", "available": true },
+      { "date": "2024-09-04", "available": true },
+      { "date": "2024-09-05", "available": true },
+      { "date": "2024-09-06", "available": true },
+      { "date": "2024-09-07", "available": true },
+      { "date": "2024-09-08", "available": true }
+    ]
+  }
+  

@@ -6,6 +6,7 @@ import { WebhookController } from './webhook/webhook.controller';
 import { EmailModule } from './email/email.module';
 import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
+import { BookingModule } from './booking/booking.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { APP_GUARD } from '@nestjs/core';
     StripeModule,
     PaymentsModule,
     EmailModule,
+    BookingModule,
     ThrottlerModule.forRoot([
       {
         ttl: 60000,
